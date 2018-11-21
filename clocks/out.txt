@@ -1,0 +1,761 @@
+qqy logged in
+qqy logged out
+qqy logged in
+yof logged in
+yof logged out
+yof logged in
+mxc logged in
+mxc logged out
+mxc logged in
+edc logged in
+edc logged out
+edc logged in
+wkk logged in
+wkk logged out
+wkk logged in
+mdv logged in
+mdv logged out
+mdv logged in
+lzv logged in
+lzv logged out
+lzv logged in
+xcd logged in
+xcd logged out
+xcd logged in
+rjg logged in
+rjg logged out
+rjg logged in
+wjr logged in
+wjr logged out
+wjr logged in
+qqy logged out
+xcd logged out
+wjr logged out
+yof logged out
+rjg logged out
+wkk logged out
+lzv logged out
+mdv logged out
+mxc logged out
+edc logged out
+wjr logged in
+qqy logged in
+mdv logged in
+wkk logged in
+mxc logged in
+yof logged in
+xcd logged in
+lzv logged in
+rjg logged in
+edc logged in
+yof leaving message for lzv
+yof logged out
+wjr leaving message for yof
+wjr logged out
+xcd leaving message for rjg
+mdv leaving message for mxc
+wkk leaving message for mdv
+mxc leaving message for edc
+lzv leaving message for edc
+edc logged out
+qqy leaving message for mxc
+rjg leaving message for mdv
+xcd logged out
+mdv logged out
+wkk logged out
+mxc logged out
+lzv logged out
+qqy logged out
+rjg logged out
+edc logged in
+Hello edc, lzv left this message: "Hello from lzv!"
+rjg logged in
+clock edc = :0::0::0::1::0::0::1::0::0::0:
+Hello edc, mxc left this message: "Hello from mxc!"
+clock edc = :0::0::1::2::0::0::1::0::0::0:
+Hello rjg, xcd left this message: "Hello from xcd!"
+clock rjg = :0::0::0::0::0::0::0::1::2::0:
+yof logged in
+Hello yof, wjr left this message: "Hello from wjr!"
+mdv logged in
+xcd logged in
+mxc logged in
+wkk logged in
+clock yof = :0::2::0::0::0::0::0::0::0::1:
+qqy logged in
+lzv logged in
+wjr logged in
+Hello mdv, rjg left this message: "Hello from rjg!"
+clock mdv = :0::0::0::0::0::2::0::0::1::0:
+Hello mdv, wkk left this message: "Hello from wkk!"
+clock mdv = :0::0::0::0::1::3::0::0::1::0:
+Hello mxc, qqy left this message: "Hello from qqy!"
+clock mxc = :1::0::2::0::0::0::0::0::0::0:
+Hello mxc, mdv left this message: "Hello from mdv!"
+clock mxc = :1::0::3::0::0::1::0::0::0::0:
+Hello lzv, yof left this message: "Hello from yof!"
+clock lzv = :0::1::0::0::0::0::2::0::0::0:
+rjg logged out
+edc leaving message for mxc
+edc logged out
+rjg logged in
+edc logged in
+yof leaving message for mdv
+xcd leaving message for wkk
+lzv leaving message for qqy
+wkk leaving message for qqy
+mdv leaving message for qqy
+mxc leaving message for rjg
+wjr leaving message for xcd
+qqy leaving message for rjg
+yof logged out
+xcd logged out
+lzv logged out
+wkk logged out
+mdv logged out
+mxc logged out
+wjr logged out
+qqy logged out
+edc leaving message for mxc
+edc logged out
+rjg leaving message for wjr
+rjg logged out
+qqy logged in
+mdv logged in
+mxc logged in
+yof logged in
+xcd logged in
+Hello qqy, mdv left this message: "Hello from mdv!"
+lzv logged in
+wkk logged in
+wjr logged in
+clock qqy = :3::0::0::0::1::4::0::0::1::0:
+Hello qqy, wkk left this message: "Hello from wkk!"
+clock qqy = :4::0::0::0::2::4::0::0::1::0:
+Hello qqy, lzv left this message: "Hello from lzv!"
+clock qqy = :5::1::0::0::2::4::3::0::1::0:
+Hello mdv, yof left this message: "Hello from yof!"
+clock mdv = :0::3::0::0::1::5::0::0::1::1:
+Hello mxc, edc left this message: "Hello from edc!"
+clock mxc = :1::0::5::4::0::1::1::0::0::0:
+Hello mxc, edc left this message: "Hello from edc!"
+clock mxc = :1::0::6::4::0::1::1::0::0::0:
+Hello xcd, wjr left this message: "Hello from wjr!"
+clock xcd = :0::0::0::0::0::0::0::3::0::2:
+Hello wkk, xcd left this message: "Hello from xcd!"
+clock wkk = :0::0::0::0::3::0::0::2::0::0:
+Hello wjr, rjg left this message: "Hello from rjg!"
+clock wjr = :0::0::0::0::0::0::0::1::3::3:
+edc logged in
+rjg logged in
+Hello rjg, qqy left this message: "Hello from qqy!"
+clock rjg = :2::0::0::0::0::0::0::1::4::0:
+Hello rjg, mxc left this message: "Hello from mxc!"
+clock rjg = :2::0::4::0::0::1::0::1::5::0:
+edc leaving message for rjg
+edc logged out
+mdv leaving message for wjr
+mxc leaving message for wjr
+yof leaving message for mdv
+lzv leaving message for qqy
+wkk leaving message for wjr
+xcd leaving message for mxc
+wjr leaving message for qqy
+qqy leaving message for edc
+mdv logged out
+mxc logged out
+yof logged out
+lzv logged out
+wkk logged out
+xcd logged out
+wjr logged out
+qqy logged out
+rjg logged out
+mdv logged in
+wjr logged in
+lzv logged in
+xcd logged in
+qqy logged in
+wkk logged in
+yof logged in
+Hello mdv, yof left this message: "Hello from yof!"
+mxc logged in
+clock mdv = :0::4::0::0::1::7::0::0::1::1:
+Hello wjr, wkk left this message: "Hello from wkk!"
+clock wjr = :0::0::0::0::4::0::0::2::3::5:
+Hello wjr, mxc left this message: "Hello from mxc!"
+clock wjr = :1::0::7::4::4::1::1::2::3::6:
+Hello wjr, mdv left this message: "Hello from mdv!"
+clock wjr = :1::3::7::4::4::6::1::2::3::7:
+Hello qqy, wjr left this message: "Hello from wjr!"
+clock qqy = :7::1::0::0::2::4::3::1::3::4:
+Hello qqy, lzv left this message: "Hello from lzv!"
+clock qqy = :8::1::0::0::2::4::4::1::3::4:
+Hello mxc, xcd left this message: "Hello from xcd!"
+clock mxc = :1::0::8::4::0::1::1::4::0::2:
+rjg logged in
+Hello rjg, edc left this message: "Hello from edc!"
+clock rjg = :2::0::4::5::0::1::1::1::6::0:
+xcd leaving message for rjg
+mdv leaving message for qqy
+yof leaving message for lzv
+qqy leaving message for rjg
+wkk leaving message for qqy
+mxc leaving message for yof
+wjr leaving message for qqy
+xcd logged out
+lzv leaving message for qqy
+mdv logged out
+yof logged out
+qqy logged out
+wkk logged out
+mxc logged out
+wjr logged out
+lzv logged out
+rjg logged out
+edc logged in
+Hello edc, qqy left this message: "Hello from qqy!"
+clock edc = :6::1::1::6::2::4::3::0::1::0:
+mdv logged in
+yof logged in
+mxc logged in
+lzv logged in
+wkk logged in
+xcd logged in
+wjr logged in
+qqy logged in
+Hello yof, mxc left this message: "Hello from mxc!"
+clock yof = :1::6::9::4::0::1::1::4::0::2:
+Hello lzv, yof left this message: "Hello from yof!"
+clock lzv = :0::5::0::0::0::0::6::0::0::1:
+Hello qqy, lzv left this message: "Hello from lzv!"
+clock qqy = :10::1::0::0::2::4::5::1::3::4:
+Hello qqy, wjr left this message: "Hello from wjr!"
+clock qqy = :11::3::7::4::4::6::5::2::3::8:
+Hello qqy, wkk left this message: "Hello from wkk!"
+clock qqy = :12::3::7::4::5::6::5::2::3::8:
+Hello qqy, mdv left this message: "Hello from mdv!"
+clock qqy = :13::4::7::4::5::8::5::2::3::8:
+rjg logged in
+Hello rjg, qqy left this message: "Hello from qqy!"
+clock rjg = :9::1::4::5::2::4::4::1::7::4:
+Hello rjg, xcd left this message: "Hello from xcd!"
+clock rjg = :9::1::4::5::2::4::4::5::8::4:
+edc leaving message for xcd
+edc logged out
+mxc leaving message for lzv
+wjr leaving message for rjg
+qqy leaving message for lzv
+yof leaving message for lzv
+wkk leaving message for lzv
+xcd leaving message for wjr
+lzv leaving message for rjg
+mdv leaving message for qqy
+mxc logged out
+wjr logged out
+qqy logged out
+yof logged out
+wkk logged out
+xcd logged out
+lzv logged out
+mdv logged out
+rjg logged out
+edc logged in
+wjr logged in
+yof logged in
+xcd logged in
+mdv logged in
+wkk logged in
+lzv logged in
+mxc logged in
+qqy logged in
+Hello wjr, xcd left this message: "Hello from xcd!"
+clock wjr = :1::3::7::4::4::6::1::6::3::10:
+Hello xcd, edc left this message: "Hello from edc!"
+clock xcd = :6::1::1::7::2::4::3::7::1::2:
+Hello lzv, wkk left this message: "Hello from wkk!"
+clock lzv = :0::5::0::0::6::0::8::2::0::1:
+Hello lzv, yof left this message: "Hello from yof!"
+clock lzv = :1::7::9::4::6::1::9::4::0::2:
+Hello lzv, qqy left this message: "Hello from qqy!"
+clock lzv = :14::7::9::4::6::8::10::4::3::8:
+Hello lzv, mxc left this message: "Hello from mxc!"
+clock lzv = :14::7::10::4::6::8::11::4::3::8:
+Hello qqy, mdv left this message: "Hello from mdv!"
+clock qqy = :15::4::7::4::5::9::5::2::3::8:
+rjg logged in
+Hello rjg, lzv left this message: "Hello from lzv!"
+clock rjg = :9::5::4::5::2::4::7::5::9::4:
+Hello rjg, wjr left this message: "Hello from wjr!"
+clock rjg = :9::5::7::5::4::6::7::5::10::9:
+yof leaving message for mdv
+xcd leaving message for rjg
+wkk leaving message for rjg
+mdv leaving message for rjg
+yof logged out
+wjr leaving message for wkk
+lzv leaving message for rjg
+qqy leaving message for rjg
+mxc leaving message for rjg
+xcd logged out
+wkk logged out
+mdv logged out
+wjr logged out
+lzv logged out
+qqy logged out
+mxc logged out
+edc leaving message for xcd
+edc logged out
+edc logged in
+rjg logged out
+rjg logged in
+Hello rjg, mxc left this message: "Hello from mxc!"
+clock rjg = :9::5::11::5::4::6::7::5::11::9:
+Hello rjg, qqy left this message: "Hello from qqy!"
+clock rjg = :16::5::11::5::5::9::7::5::12::9:
+Hello rjg, lzv left this message: "Hello from lzv!"
+clock rjg = :16::7::11::5::6::9::12::5::13::9:
+Hello rjg, mdv left this message: "Hello from mdv!"
+clock rjg = :16::7::11::5::6::10::12::5::14::9:
+Hello rjg, wkk left this message: "Hello from wkk!"
+clock rjg = :16::7::11::5::7::10::12::5::15::9:
+Hello rjg, xcd left this message: "Hello from xcd!"
+clock rjg = :16::7::11::7::7::10::12::8::16::9:
+rjg leaving message for edc
+rjg logged out
+yof logged in
+mdv logged in
+lzv logged in
+mxc logged in
+wkk logged in
+xcd logged in
+wjr logged in
+qqy logged in
+Hello mdv, yof left this message: "Hello from yof!"
+clock mdv = :1::8::9::4::1::11::1::4::1::2:
+Hello wkk, wjr left this message: "Hello from wjr!"
+clock wkk = :1::3::7::4::8::6::1::6::3::11:
+Hello xcd, edc left this message: "Hello from edc!"
+clock xcd = :6::1::1::8::2::4::3::9::1::2:
+rjg logged in
+edc leaving message for rjg
+edc logged out
+mxc leaving message for rjg
+xcd leaving message for wjr
+qqy leaving message for rjg
+wkk leaving message for mxc
+yof leaving message for lzv
+lzv leaving message for mxc
+wjr leaving message for qqy
+mdv leaving message for rjg
+mxc logged out
+xcd logged out
+qqy logged out
+wkk logged out
+yof logged out
+lzv logged out
+wjr logged out
+mdv logged out
+rjg leaving message for edc
+rjg logged out
+edc logged in
+Hello edc, rjg left this message: "Hello from rjg!"
+clock edc = :16::7::11::10::7::10::12::8::18::9:
+Hello edc, rjg left this message: "Hello from rjg!"
+clock edc = :16::7::11::11::7::10::12::8::18::9:
+xcd logged in
+qqy logged in
+yof logged in
+wjr logged in
+Hello qqy, wjr left this message: "Hello from wjr!"
+lzv logged in
+wkk logged in
+mdv logged in
+mxc logged in
+clock qqy = :18::4::7::4::5::9::5::6::3::12:
+Hello wjr, xcd left this message: "Hello from xcd!"
+clock wjr = :6::3::7::8::4::6::3::10::3::13:
+Hello lzv, yof left this message: "Hello from yof!"
+clock lzv = :14::9::10::4::6::8::14::4::3::8:
+Hello mxc, lzv left this message: "Hello from lzv!"
+clock mxc = :14::7::13::4::6::8::13::4::3::8:
+Hello mxc, wkk left this message: "Hello from wkk!"
+clock mxc = :14::7::14::4::9::8::13::6::3::11:
+rjg logged in
+Hello rjg, mdv left this message: "Hello from mdv!"
+clock rjg = :16::8::11::7::7::12::12::8::19::9:
+Hello rjg, qqy left this message: "Hello from qqy!"
+clock rjg = :17::8::11::7::7::12::12::8::20::9:
+Hello rjg, mxc left this message: "Hello from mxc!"
+clock rjg = :17::8::12::7::7::12::12::8::21::9:
+Hello rjg, edc left this message: "Hello from edc!"
+clock rjg = :17::8::12::9::7::12::12::8::22::9:
+edc leaving message for wkk
+edc logged out
+xcd leaving message for qqy
+xcd logged out
+yof leaving message for mdv
+qqy leaving message for lzv
+yof logged out
+mdv leaving message for rjg
+mxc leaving message for xcd
+wkk leaving message for yof
+lzv leaving message for rjg
+qqy logged out
+wjr leaving message for mdv
+mdv logged out
+mxc logged out
+wkk logged out
+lzv logged out
+wjr logged out
+edc logged in
+rjg logged out
+yof logged in
+xcd logged in
+lzv logged in
+wkk logged in
+Hello yof, wkk left this message: "Hello from wkk!"
+mxc logged in
+mdv logged in
+qqy logged in
+wjr logged in
+clock yof = :1::11::9::4::10::6::1::6::3::11:
+Hello xcd, mxc left this message: "Hello from mxc!"
+clock xcd = :14::7::15::8::9::8::13::12::3::11:
+Hello lzv, qqy left this message: "Hello from qqy!"
+clock lzv = :19::9::10::4::6::9::16::6::3::12:
+Hello wkk, edc left this message: "Hello from edc!"
+clock wkk = :16::7::11::12::11::10::12::8::18::11:
+Hello mdv, wjr left this message: "Hello from wjr!"
+clock mdv = :6::8::9::8::4::14::3::10::3::14:
+Hello mdv, yof left this message: "Hello from yof!"
+clock mdv = :6::10::9::8::4::15::3::10::3::14:
+Hello qqy, xcd left this message: "Hello from xcd!"
+clock qqy = :20::4::7::8::5::9::5::11::3::12:
+edc leaving message for yof
+edc logged out
+mdv leaving message for lzv
+yof leaving message for lzv
+qqy leaving message for mxc
+wkk leaving message for lzv
+xcd leaving message for mxc
+wjr leaving message for rjg
+lzv leaving message for wjr
+mxc leaving message for wkk
+mdv logged out
+yof logged out
+qqy logged out
+wkk logged out
+xcd logged out
+wjr logged out
+lzv logged out
+mxc logged out
+xcd logged in
+wjr logged in
+wkk logged in
+mdv logged in
+lzv logged in
+yof logged in
+qqy logged in
+Hello wjr, lzv left this message: "Hello from lzv!"
+clock wjr = :19::9::10::8::6::9::17::10::3::16:
+Hello wkk, mxc left this message: "Hello from mxc!"
+clock wkk = :16::7::16::12::13::10::13::8::18::11:
+Hello lzv, wkk left this message: "Hello from wkk!"
+clock lzv = :19::9::11::12::12::10::18::8::18::12:
+Hello lzv, yof left this message: "Hello from yof!"
+clock lzv = :19::12::11::12::12::10::19::8::18::12:
+Hello lzv, mdv left this message: "Hello from mdv!"
+clock lzv = :19::12::11::12::12::16::20::10::18::14:
+Hello yof, edc left this message: "Hello from edc!"
+clock yof = :16::13::11::13::10::10::12::8::18::11:
+rjg logged in
+Hello rjg, wjr left this message: "Hello from wjr!"
+clock rjg = :17::8::12::9::7::12::12::10::23::15:
+Hello rjg, lzv left this message: "Hello from lzv!"
+clock rjg = :17::9::12::9::7::12::15::10::24::15:
+Hello rjg, mdv left this message: "Hello from mdv!"
+clock rjg = :17::9::12::9::7::13::15::10::25::15:
+edc logged in
+edc leaving message for qqy
+edc logged out
+mdv leaving message for lzv
+wjr leaving message for mxc
+yof leaving message for wjr
+qqy leaving message for wjr
+xcd leaving message for wjr
+mdv logged out
+lzv leaving message for mxc
+wjr logged out
+yof logged out
+wkk leaving message for wjr
+qqy logged out
+xcd logged out
+lzv logged out
+wkk logged out
+mxc logged in
+Hello mxc, lzv left this message: "Hello from lzv!"
+clock mxc = :19::12::17::12::12::16::21::10::18::14:
+Hello mxc, wjr left this message: "Hello from wjr!"
+clock mxc = :19::12::18::12::12::16::21::10::18::17:
+Hello mxc, xcd left this message: "Hello from xcd!"
+clock mxc = :19::12::19::12::12::16::21::13::18::17:
+Hello mxc, qqy left this message: "Hello from qqy!"
+clock mxc = :21::12::20::12::12::16::21::13::18::17:
+edc logged in
+mxc logged out
+rjg leaving message for edc
+rjg logged out
+mxc logged in
+wjr logged in
+Hello wjr, wkk left this message: "Hello from wkk!"
+clock wjr = :19::9::16::12::14::10::17::10::18::18:
+qqy logged in
+lzv logged in
+mdv logged in
+xcd logged in
+wkk logged in
+yof logged in
+Hello wjr, xcd left this message: "Hello from xcd!"
+clock wjr = :19::9::16::12::14::10::17::14::18::19:
+Hello wjr, qqy left this message: "Hello from qqy!"
+clock wjr = :22::9::16::12::14::10::17::14::18::20:
+Hello wjr, yof left this message: "Hello from yof!"
+clock wjr = :22::14::16::13::14::10::17::14::18::21:
+Hello qqy, edc left this message: "Hello from edc!"
+clock qqy = :23::7::11::14::7::10::12::11::18::12:
+Hello lzv, mdv left this message: "Hello from mdv!"
+clock lzv = :19::12::11::12::12::17::22::10::18::14:
+edc leaving message for yof
+edc logged out
+rjg logged in
+mxc leaving message for edc
+mxc logged out
+rjg leaving message for edc
+rjg logged out
+mdv leaving message for rjg
+mdv logged out
+qqy leaving message for xcd
+lzv leaving message for wkk
+qqy logged out
+xcd leaving message for rjg
+yof leaving message for qqy
+wkk leaving message for rjg
+wjr leaving message for lzv
+lzv logged out
+xcd logged out
+yof logged out
+wkk logged out
+wjr logged out
+edc logged in
+Hello edc, rjg left this message: "Hello from rjg!"
+clock edc = :17::9::12::16::7::13::15::10::27::15:
+Hello edc, mxc left this message: "Hello from mxc!"
+clock edc = :21::12::21::17::12::16::21::13::27::17:
+Hello edc, rjg left this message: "Hello from rjg!"
+clock edc = :21::12::21::18::12::16::21::13::27::17:
+rjg logged in
+Hello rjg, wkk left this message: "Hello from wkk!"
+clock rjg = :17::9::16::12::15::13::15::10::28::15:
+Hello rjg, xcd left this message: "Hello from xcd!"
+clock rjg = :17::9::16::12::15::13::15::15::29::15:
+Hello rjg, mdv left this message: "Hello from mdv!"
+clock rjg = :17::10::16::12::15::18::15::15::30::15:
+mxc logged in
+wjr logged in
+rjg leaving message for yof
+rjg logged out
+qqy logged in
+Hello qqy, yof left this message: "Hello from yof!"
+xcd logged in
+wkk logged in
+mdv logged in
+lzv logged in
+yof logged in
+clock qqy = :25::15::11::14::10::10::12::11::18::12:
+Hello xcd, qqy left this message: "Hello from qqy!"
+clock xcd = :24::7::15::14::9::10::13::16::18::12:
+Hello wkk, lzv left this message: "Hello from lzv!"
+clock wkk = :19::12::16::12::16::17::23::10::18::14:
+Hello lzv, wjr left this message: "Hello from wjr!"
+clock lzv = :22::14::16::13::14::17::24::14::18::22:
+Hello yof, rjg left this message: "Hello from rjg!"
+clock yof = :17::16::16::13::15::18::15::15::31::15:
+Hello yof, edc left this message: "Hello from edc!"
+clock yof = :17::17::16::15::15::18::15::15::31::15:
+edc leaving message for qqy
+edc logged out
+mxc leaving message for lzv
+mxc logged out
+xcd leaving message for wjr
+yof leaving message for wjr
+mdv leaving message for wjr
+lzv leaving message for wjr
+wkk leaving message for wjr
+qqy leaving message for yof
+xcd logged out
+yof logged out
+mdv logged out
+lzv logged out
+wkk logged out
+qqy logged out
+wjr logged out
+edc logged in
+rjg logged in
+mxc logged in
+wjr logged in
+Hello wjr, wkk left this message: "Hello from wkk!"
+clock wjr = :22::14::16::13::17::17::23::14::18::23:
+Hello wjr, lzv left this message: "Hello from lzv!"
+clock wjr = :22::14::16::13::17::17::25::14::18::24:
+Hello wjr, mdv left this message: "Hello from mdv!"
+clock wjr = :22::14::16::13::17::19::25::14::18::25:
+Hello wjr, yof left this message: "Hello from yof!"
+clock wjr = :22::18::16::15::17::19::25::15::31::26:
+Hello wjr, xcd left this message: "Hello from xcd!"
+clock wjr = :24::18::16::15::17::19::25::17::31::27:
+rjg leaving message for edc
+rjg logged out
+qqy logged in
+Hello qqy, edc left this message: "Hello from edc!"
+lzv logged in
+clock qqy = :27::15::21::19::12::16::21::13::27::17:
+mdv logged in
+yof logged in
+xcd logged in
+wkk logged in
+Hello lzv, mxc left this message: "Hello from mxc!"
+clock lzv = :22::14::22::13::14::17::26::14::18::22:
+Hello yof, qqy left this message: "Hello from qqy!"
+clock yof = :26::19::16::15::15::18::15::15::31::15:
+edc leaving message for lzv
+edc logged out
+wjr logged out
+mxc leaving message for yof
+mxc logged out
+xcd leaving message for wjr
+mdv leaving message for wkk
+lzv leaving message for wjr
+xcd logged out
+mdv logged out
+qqy leaving message for wjr
+wkk leaving message for wjr
+lzv logged out
+yof leaving message for wjr
+qqy logged out
+wkk logged out
+yof logged out
+rjg logged in
+edc logged in
+Hello edc, rjg left this message: "Hello from rjg!"
+clock edc = :21::12::21::21::15::18::21::15::32::17:
+mxc logged in
+wjr logged in
+Hello wjr, yof left this message: "Hello from yof!"
+clock wjr = :26::20::16::15::17::19::25::17::31::28:
+Hello wjr, wkk left this message: "Hello from wkk!"
+clock wjr = :26::20::16::15::18::19::25::17::31::29:
+Hello wjr, qqy left this message: "Hello from qqy!"
+clock wjr = :28::20::21::19::18::19::25::17::31::30:
+Hello wjr, lzv left this message: "Hello from lzv!"
+clock wjr = :28::20::22::19::18::19::27::17::31::31:
+Hello wjr, xcd left this message: "Hello from xcd!"
+clock wjr = :28::20::22::19::18::19::27::18::31::32:
+yof logged in
+Hello yof, mxc left this message: "Hello from mxc!"
+clock yof = :26::21::23::15::15::18::21::15::31::17:
+wkk logged in
+qqy logged in
+Hello wkk, mdv left this message: "Hello from mdv!"
+xcd logged in
+mdv logged in
+lzv logged in
+clock wkk = :19::12::16::12::19::20::23::10::18::14:
+Hello lzv, edc left this message: "Hello from edc!"
+clock lzv = :22::14::22::20::14::17::28::14::27::22:
+rjg leaving message for edc
+rjg logged out
+edc leaving message for lzv
+edc logged out
+wjr leaving message for yof
+wjr logged out
+mxc leaving message for yof
+mxc logged out
+edc logged in
+Hello edc, rjg left this message: "Hello from rjg!"
+clock edc = :21::12::21::23::15::18::21::15::33::17:
+mxc logged in
+wkk leaving message for yof
+wkk logged out
+qqy leaving message for wkk
+mdv leaving message for lzv
+xcd leaving message for yof
+lzv leaving message for qqy
+qqy logged out
+mdv logged out
+xcd logged out
+lzv logged out
+yof logged out
+rjg logged in
+wjr logged in
+yof logged in
+Hello yof, xcd left this message: "Hello from xcd!"
+clock yof = :26::22::23::15::15::18::21::19::31::17:
+Hello yof, wkk left this message: "Hello from wkk!"
+clock yof = :26::23::23::15::20::20::23::19::31::17:
+Hello yof, mxc left this message: "Hello from mxc!"
+clock yof = :26::24::24::15::20::20::23::19::31::17:
+Hello yof, wjr left this message: "Hello from wjr!"
+clock yof = :28::25::24::19::20::20::27::19::31::33:
+wjr leaving message for qqy
+wjr logged out
+wjr logged in
+wjr leaving message for yof
+wjr logged out
+rjg leaving message for yof
+rjg logged out
+edc leaving message for xcd
+edc logged out
+edc logged in
+wjr logged in
+mxc leaving message for xcd
+mxc logged out
+mxc logged in
+lzv logged in
+wkk logged in
+qqy logged in
+mdv logged in
+xcd logged in
+Hello lzv, mdv left this message: "Hello from mdv!"
+clock lzv = :22::14::22::20::14::21::30::14::27::22:
+Hello lzv, edc left this message: "Hello from edc!"
+clock lzv = :22::14::22::22::15::21::31::15::32::22:
+Hello wkk, qqy left this message: "Hello from qqy!"
+clock wkk = :29::15::21::19::21::20::23::13::27::17:
+Hello qqy, wjr left this message: "Hello from wjr!"
+clock qqy = :30::20::22::19::18::19::27::18::31::34:
+Hello qqy, lzv left this message: "Hello from lzv!"
+clock qqy = :31::20::22::20::18::19::29::18::31::34:
+Hello xcd, mxc left this message: "Hello from mxc!"
+clock xcd = :24::12::25::14::12::16::21::20::18::17:
+Hello xcd, edc left this message: "Hello from edc!"
+clock xcd = :24::12::25::24::15::18::21::21::33::17:
+yof leaving message for mxc
+yof logged out
+yof logged in
+Hello yof, rjg left this message: "Hello from rjg!"
+clock yof = :28::27::24::19::20::20::27::19::34::33:
+Hello yof, wjr left this message: "Hello from wjr!"
+clock yof = :28::28::24::19::20::20::27::19::34::35:
+mdv leaving message for lzv
+mdv logged out
+qqy leaving message for mxc
+xcd leaving message for lzv
+wkk leaving message for xcd
+lzv leaving message for mxc
+qqy logged out
+xcd logged out
+wkk logged out
+lzv logged out
+edc leaving message for mxc
+edc logged out
