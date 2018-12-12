@@ -67,8 +67,9 @@ struct BUCKET_TREE_t; typedef struct BUCKET_TREE_t BUCKET_TREE;
 typedef struct BUCKET_t
 {
 	BUCKET_TREE * parent;	
-	CONTACT contacts[N_CONTACTS];
+	CONTACT * contacts[N_CONTACTS];
 	int n_contacts;
+	int circle_idx;
 	//CONTACT * replacements;
 	//int n_replacements;
 	
@@ -220,22 +221,44 @@ void hash_search(HASH_TABLE table, HASH_ENTRY * entry)
 	*entry = table[idx];
 }
 
-void merge_contact_lists(CONTACT ** dst, CONTACT ** src)
-{
+void merge_contact_lists(CONTACT ** dst, CONTACT ** src, K_ID hash)
+{	
+	K_ID src_distance[N_CONTACTS] = {0};
+	K_ID dst_distance[N_CONTACTS] = {0};
+
+	for(int i=0; dst[i] && i<N_CONTACTS; i++)
+		hash_distance(hash,dst[i]->id,dst_distance[i]);
+	
+	for(int i=0; src[i] && i<N_CONTACTS; i++)
+		hash_distance(hash,src[i]->id,src_distance[i]);
+	
 	for(int i=0; src[i] && i<N_CONTACTS; i++)
 	{
 		CONTACT * contact = src[i];
+		int skip = 0;
+		for(int j = 0; dst[j] && j < N_CONTACTS; j++)
+		if(contact->idx == dst[j]->idx)
+			skip = 1;
 		
+		if(skip) continue;
+		
+		int add = 0;
 		int j = 0;
 		for(; dst[j] && j < N_CONTACTS; j++)		
-		if(hash_lth(contact->distance,dst[j]->distance))
+		if(hash_lth(src_distance[i],dst_distance[j]))
 		{
 			for(int k = N_CONTACTS-1; k > j; k--)
 				dst[k] = dst[k-1];
 			dst[j] = contact;
+			add=1;
+			break;
 		}
 		
-		if(j < N_CONTACTS && !dst[j]) dst[j] = contact;
+		if(!add && j < N_CONTACTS && !dst[j]) 
+		{
+			dst[j] = contact;
+			add=1;
+		}
 	}
 }
 
@@ -247,7 +270,7 @@ BUCKET * find_bucket(BUCKET_TREE * tree, K_ID id)
 	{
 		if(hash_lth(id,tree->children[0]->max))
 			return find_bucket(tree->children[0],id);
-		else if (tree->children[1])
+		else
 			return find_bucket(tree->children[1],id);
 	}
 	else return tree->bucket;
@@ -261,6 +284,7 @@ void add_contact(NODE * node, CONTACT * contact)
 	
 	BUCKET * bucket = find_bucket(node->contacts,contact->id);
 	
+	
 	if(bucket == NULL)
 	{
 		node->contacts = (BUCKET_TREE*) MALLOC_Z(sizeof(BUCKET_TREE));
@@ -270,23 +294,25 @@ void add_contact(NODE * node, CONTACT * contact)
 		memset(bucket->parent->max,0xFF,sizeof(K_ID));
 	}
 	
-	for(int i = 0; i < N_CONTACTS; i++)
-	if(bucket->contacts[i].id == contact->id)
+	for(int i = 0; i < bucket->n_contacts; i++)
+	if(bucket->contacts[i]->idx == contact->idx)
 		return;
 	
-	if(bucket->n_contacts < N_CONTACTS)	bucket->contacts[bucket->n_contacts++] = *contact;
+	if(bucket->n_contacts < N_CONTACTS) bucket->n_contacts++;
 	else if( hash_in_range(node->info.id, bucket->parent->min, bucket->parent->max) )
-	{
-		K_ID split; hash_split(bucket->parent->min,bucket->parent->max,split);
-		
+	{		
 		BUCKET_TREE * tree = bucket->parent;
+		
+		K_ID split; hash_split(tree->min,tree->max,split);
+		
 		tree->children[0] = (BUCKET_TREE*) MALLOC_Z(sizeof(BUCKET_TREE));
 		tree->children[1] = (BUCKET_TREE*) MALLOC_Z(sizeof(BUCKET_TREE));
 		tree->children[0]->bucket = (BUCKET*) MALLOC_Z(sizeof(BUCKET));
 		tree->children[1]->bucket = (BUCKET*) MALLOC_Z(sizeof(BUCKET));
 		
-		tree->children[0]->bucket->parent = tree->children[1]->bucket->parent = tree;
-		//tree->children[0]->parent = tree->children[1]->parent = tree;
+		tree->children[0]->bucket->parent = tree->children[0];
+		tree->children[1]->bucket->parent = tree->children[1];
+		tree->bucket = NULL;		
 		
 		memcpy(tree->children[0]->min,bucket->parent->min,sizeof(K_ID));
 		memcpy(tree->children[1]->max,bucket->parent->max,sizeof(K_ID));
@@ -295,14 +321,18 @@ void add_contact(NODE * node, CONTACT * contact)
 		
 		for(int i=0; i < bucket->n_contacts; i++)
 		{
-			BUCKET * dst = find_bucket(tree,bucket->contacts[i].id);
-			dst->contacts[dst->n_contacts++] = bucket->contacts[i];
+			BUCKET * dst = find_bucket(tree,bucket->contacts[i]->id);
+			dst->contacts[dst->circle_idx++] = bucket->contacts[i];
+			dst->n_contacts++;
 		}
 		
 		free(bucket);
 		bucket = find_bucket(tree,contact->id);
 	}
-	
+		
+	bucket->circle_idx %= N_CONTACTS;
+	bucket->contacts[bucket->circle_idx++] = contact;
+	bucket->circle_idx %= N_CONTACTS;
 	#undef MALLOC_Z
 }
 
@@ -316,10 +346,11 @@ void list_contacts(BUCKET_TREE * tree)
 	else
 	{
 		BUCKET * bucket = tree->bucket;
+		
 		printf("Tree Node: "); hash_print(tree->min); printf("-"); hash_print(tree->max); printf("\n");
 		for(int i = 0; i < bucket->n_contacts; i++)
 		{
-			printf("\tContact %d: ", bucket->contacts[i].idx); hash_print(bucket->contacts[i].id); printf("\n");
+			printf("\tContact %d: ", bucket->contacts[i]->idx); hash_print(bucket->contacts[i]->id); printf("\n");
 		}
 	}	
 }
@@ -329,11 +360,7 @@ void list_contacts(BUCKET_TREE * tree)
 //
 
 int rpc_ping(NODE * sender, CONTACT * contact)
-{
-	// should probably do this symmetrically
-	// so that the other node updates last_seen
-	// we'll leave it like this since we aren't using it yet
-	
+{	
 	NODE * node = &all_nodes[contact->idx];
 	if(node->is_online) 
 	{
@@ -359,7 +386,7 @@ void rpc_find_node(NODE * sender, CONTACT * contact, K_ID hash, CONTACT ** close
 	if(!rpc_ping(sender,contact)) return;	
 	NODE * node = &all_nodes[contact->idx];
 	
-	printf("start search\n");
+	//printf("searching %d\n",node->info.idx);
 	
 	BUCKET_TREE * stack[160*2] = {node->contacts}; // n*2 should be big enough
 	int stack_size=1;
@@ -371,18 +398,14 @@ void rpc_find_node(NODE * sender, CONTACT * contact, K_ID hash, CONTACT ** close
 		if(bucket_tree->children[0]) stack[stack_size++] = bucket_tree->children[0];
 		if(bucket_tree->children[1]) stack[stack_size++] = bucket_tree->children[1];
 		
-		if(bucket)
-		{
-			CONTACT * bucket_contacts[N_CONTACTS] = {NULL};
-			for(int i=0; i<bucket->n_contacts; i++)
-			{
-				CONTACT * contact = &bucket->contacts[i];
-				hash_distance(hash,contact->id,contact->distance);
-				bucket_contacts[i] = contact;
-			}
-			merge_contact_lists(closest,bucket_contacts);
-		}		
+		
+		if(bucket) merge_contact_lists(closest,bucket->contacts,hash);
 	}
+	/*
+	for(int i = 0; closest[i] && i < N_CONTACTS; i++)
+	{
+		printf("\t %d ", closest[i]->idx); hash_print(closest[i]->id); printf("\n");
+	}*/
 }
 
 void rpc_find_value(NODE * sender, CONTACT * contact, HASH_ENTRY * entry, CONTACT ** closest)
@@ -401,11 +424,9 @@ void rpc_find_value(NODE * sender, CONTACT * contact, HASH_ENTRY * entry, CONTAC
 
 void kademlia_search(NODE * node, K_ID hash, HASH_ENTRY * entry, CONTACT ** closest, CONTACT ** exclusion, int * n_exclusion)
 {
-	if(entry)
-		rpc_find_node(node,&node->info,entry->hash,closest);	
-	else
-		rpc_find_node(node,&node->info,hash,closest);
-		
+	if(!hash && !entry) return;
+	else if(!hash) hash = entry->hash;
+	rpc_find_node(node,&node->info,hash,closest);
 	
 	for(;;)
 	{
@@ -418,14 +439,19 @@ void kademlia_search(NODE * node, K_ID hash, HASH_ENTRY * entry, CONTACT ** clos
 			if(exclusion[j]->idx == closest[i]->idx)
 				{ excluded=1; break; }
 			
-			if(!excluded) new_contacts[n_new_contacts++] = closest[i];
+			if(!excluded) 
+			{
+				new_contacts[n_new_contacts++] = closest[i];
+				exclusion[(*n_exclusion)++] = closest[i];
+			}
+			
 		}
 		
 		if(n_new_contacts==0) return;
 		
 		for(int i = 0; i<n_new_contacts; i++)
 		{
-			CONTACT * query[N_CONTACTS] = {NULL};
+			CONTACT * query[N_CONTACTS] = {0};
 			
 			if(entry)
 			{
@@ -440,8 +466,7 @@ void kademlia_search(NODE * node, K_ID hash, HASH_ENTRY * entry, CONTACT ** clos
 			else 
 				rpc_find_node(node,new_contacts[i],hash,query);
 			
-			merge_contact_lists(closest,query);
-			exclusion[(*n_exclusion)++] = new_contacts[i];
+			merge_contact_lists(closest,query,hash);
 		}
 	}
 }
@@ -452,10 +477,12 @@ void kademlia_store_value(NODE * node, HASH_ENTRY * entry)
 	CONTACT * closest[N_CONTACTS] = {0};
 	int n_exclusion=1;
 	
+	printf("finding nodes closest to "); hash_print(entry->hash); printf("\n");
+	
 	kademlia_search(node,entry->hash,NULL,closest,exclusion,&n_exclusion);
 	for(int i = 0; closest[i] && i < N_CONTACTS; i++)
 	{
-		printf("Storing data to node: "); hash_print(closest[i]->id); printf("\n");
+		printf("Storing data to node %d: ",closest[i]->idx); hash_print(closest[i]->id); printf("\n");
 		rpc_store_value(node,closest[i],entry);
 	}
 }
@@ -466,11 +493,15 @@ void kademlia_find_value(NODE * node, HASH_ENTRY * entry)
 	CONTACT * closest[N_CONTACTS] = {0};
 	int n_exclusion=1;
 	
+	//printf("searching for value for node %d\n", node->info.idx);
 	kademlia_search(node,NULL,entry,closest,exclusion,&n_exclusion);
 }
 
 int main(int argc, char * argv[])
 {
+	
+	static char buffer[0xFFF];
+	setvbuf( stdout, buffer, _IOFBF, sizeof(buffer) );
 	
 	// Hash table tests:
 	char str0[256] = "This a test #1";
@@ -524,14 +555,51 @@ int main(int argc, char * argv[])
 			node->is_online = 1;
 		}
 		
+		
 		for(int i = 0; i < N_NODES; i++)
+		{
 			add_contact(&all_nodes[i],&all_nodes[(i+1)%N_NODES].info);
-	
-		kademlia_store_value(&all_nodes[0],&a);
-	
-		printf("Node 0 contacts:\n");
+			add_contact(&all_nodes[i],&all_nodes[(i+N_NODES-1)%N_NODES].info);
+		}
+		for(int i = 1; i < N_NODES; i++)
+			add_contact(&all_nodes[0],&all_nodes[(i)%N_NODES].info);
+		
+		printf("Node 0 contacts:"); hash_print(all_nodes[0].info.id); printf("\n");
 		list_contacts(all_nodes[0].contacts);
+		
+		kademlia_store_value(&all_nodes[0],&a);
+		kademlia_store_value(&all_nodes[0],&b);
+		
+		printf("Node 0 contacts:"); hash_print(all_nodes[0].info.id); printf("\n");
+		list_contacts(all_nodes[0].contacts);
+		
+	
+		fflush(stdout);
+		printf("\n");
+		for(int i = 0; i < 10; i++)
+		{
+			// populate routing tables by looking up non-existent data
+			HASH_ENTRY search = {0};
+			memcpy(search.hash, all_nodes[i].info.id, sizeof(K_ID));
+			for(int j = 1; j < N_NODES; j++)
+				kademlia_find_value(&all_nodes[j],&search);	
+		}
+		
+		int node = 20;
+		printf("Node %d contacts:",node); hash_print(all_nodes[node].info.id); printf("\n");
+		list_contacts(all_nodes[node].contacts);
+		
+		HASH_ENTRY search = {0};
+		memcpy(search.hash, &b, sizeof(K_ID));
+		kademlia_find_value(&all_nodes[node],&search);
+		
+		if(search.data)
+			printf("Data found: %.*s", search.size, (char*)search.data);
+		else
+			printf("Data not found!");
+		
 	}
 	
+	fflush(stdout);
 	
 }
